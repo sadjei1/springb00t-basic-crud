@@ -20,6 +20,11 @@ public class UserController {
         return "Hello, Everything is working great!!!";
     }
 
+    @GetMapping("/sayHello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
+
 
     @PostMapping("/user/save")
     public ResponseEntity<User> saveUser(@RequestBody User user) {
