@@ -20,6 +20,7 @@ public class UserController {
         return "Hello, Everything is working great!!!";
     }
 
+
     @PostMapping("/user/save")
     public ResponseEntity<User> saveUser(@RequestBody User user) {
         User savedUser = userRepository.save(user);
@@ -75,16 +76,5 @@ public class UserController {
         userRepository.deleteById(id);
         return ResponseEntity.ok().build();
     }
-
-
-
-
-
-
-
-    
-
-
-
 
 }
