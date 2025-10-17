@@ -33,4 +33,7 @@ build/
 .vscode/
 
 application.properties
+*.properties
+*.yml
+*.txt
 
